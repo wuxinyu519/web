@@ -1,0 +1,64 @@
+@font-face {
+    font-family: myFont1;
+    src: url('../tools/ziti.ttf');
+}
+.index{
+    padding: 5px;
+    background-color: rgba(125, 223, 108, 1);
+    /*background-color: #aae6de;*/
+    opacity: 0.7;
+    font-family: myFont1;
+    font-size: 1.8em;
+}
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
+}
+.h,.h a{
+    font-size: 30px;
+}
+
+ul.nav-tabs{
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.67);
+}
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child{
+    border-top: none;
+}
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #204d74;
+    border: 1px solid #204d74;
+}
+ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+#myScrollspy{
+    position: absolute;
+}
+
+.xingcheng{
+    padding: 20px 150px;
+}
+.pagi{
+    text-align: center;
+}

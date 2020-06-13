@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yingshi</title>
+    <link rel="stylesheet" href="../mystyle/bootstrap.css">
+    <link rel="stylesheet" href="../mystyle/yingshi.css">
+    <script src="../tools/bootstrap.js"></script>
+    <script src="../tools/jquery-3.4.1.js"></script>
+</head>
+<body>
+<div class="index">
+    <header>
+        <ul id="nav" class="row nav nav-pills">
+            <li class="col-md-3"><a href="../html/index.html">首页</a></li>
+            <li class="col-md-3"><a href="../html/music.html">歌曲</a></li>
+            <li class="col-md-3 active"><a href="../html/yingshi.html">影视</a></li>
+            <!--<li class="col-md-3"><a href="https://www.weibo.com/u/6554599420">其它</a></li>-->
+        </ul>
+    </header>
+    <div class="container row">
+        <div id="left" class="con-left col-md-2">
+            <ul>
+                <li ><a>影视</a></li>
+                <li><a href="#" onclick="video1()">认识的哥哥</a></li>
+                <li ><a href="#" onclick="video2()">going seventeen</a></li>
+                <li ><a href="#" onclick="video3()">青春有你</a></li>
+            </ul>
+        </div>
+        <div id="right" class="con-right col-md-9">
+            <iframe src="renge.html" class="content" id="c" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script>
+
+    reSetSize();
+    window.onresize = reSetSize;
+
+    //        iframe内容自适应
+    function reSetSize() {
+        var a=document.getElementsByClassName("content");
+        var windowsHeight = window.innerHeight;
+        var windowsWeight =window.innerWidth;
+        for(i=0;i<a.length;i++){
+            a[i].style.height= (windowsHeight-60) + "px";
+            a[i].style.width=(windowsWeight-$('.left').width())+"px"
+        }
+    }
+    //        点击事件
+    function video1() {
+        document.getElementById('c').src="renge.html"
+    }
+    function video2() {
+        document.getElementById('c').src="going.html"
+    }
+    function video3() {
+        document.getElementById('c').src="https://www.bilibili.com/video/BV1C741187x6?from=search&seid=15372411518945754936"
+    }
+
+</script>
+
+</html>
