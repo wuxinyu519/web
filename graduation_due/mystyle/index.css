@@ -1,0 +1,208 @@
+@font-face {
+    font-family: myFont1;
+    src: url('../tools/ziti.ttf');
+}
+body{
+    min-width: 300px;
+}
+button, select, input {
+    font-family: myFont1;
+}
+
+header {
+    font-family: myFont1;
+    background-color: #67b168;
+    padding: 0.8em 0;
+}
+
+.login-item input{
+    width:350px;
+    height:40px;
+}
+.login-item a{
+    width:354px;
+    height:50px;
+    background:#00897B;
+    display:block;
+    font-size:16px;
+    color:#fff;
+    line-height:50px;
+    text-align:center;
+    display:block;
+    text-decoration:none;
+}
+.login-item{
+    margin-top:15px;
+    margin-left:20px;
+}
+#loginBox{
+    width:40%;
+    display:none;
+}
+
+
+.login{
+    width: 150px;
+    height: 60px;
+    margin-top: -25px;
+    float: right;
+    margin-right: 25px;
+
+
+}
+.login>a{
+    color: #ffffff;
+
+}
+
+
+
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-default {
+    padding: 1.5em 0;
+    background-color: #f2f0f1;
+    box-shadow: 12px -5px 39px -12px;
+}
+
+.navbar-nav > li a {
+    top: 10px;
+    padding: 0.5em 0.3em;
+    margin-left: 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #919191;
+}
+
+.navbar-nav > li a:hover {
+    background-color: #d96b66;
+    color: white;
+    border-radius: 3px;
+}
+
+.navbar-right > a {
+    color: #d96b66;
+}
+.index{
+    padding: 20px;
+    }
+.page{
+    background-color: rgba(125, 223, 108, 0.6);
+    margin: 20px 10px;
+}
+.intro{
+    margin: 0 auto;
+    width:70%;
+    padding: 20px;
+}
+
+#myCarousel img{
+    width:100%;
+    background-repeat: no-repeat;
+}
+#words{
+    border-radius: 20px;
+    border:10px solid #67b168;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    font-size: 1.6em;
+    line-height: 60px;
+    font-family: myFont1;
+}
+.other{
+
+    margin-top: 20px;
+}
+.pics{
+    text-align: center;
+}
+.pic{
+    text-align: center;
+    width:22%;
+    display: inline-block;
+    margin: 0px 70px;
+}
+.pic a{
+
+    font-family: myFont1;
+    color: #2d3741;
+    font-size: 2em;
+}
+.pic img{
+    width:100%;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 12px 10px 4px 2px #262626;
+    margin-bottom: 20px;
+}
+footer p{
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.8em;
+    vertical-align: center;
+    margin: 0.4em 0;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer{
+    margin-top: 10px;
+    padding: 1em 0;
+    background-color: #67b168;
+}
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li{
+    display: inline-block;
+}
+.footer-left{
+    float: left;
+}
+.footer-right{
+    float: right;
+}
+.glyphicon{
+    font-size: 1.2em;
+    color: #f2f0f1;
+}
+@media screen and (max-width: 450px) {
+.navbar-nav > li a {
+    font-size: 1.1em;
+}
+    #words{
+        line-height: 30px;
+        font-size: 1em;
+    }
+    .pic{
+        font-size: 0.4em;
+    }
+}
+@media screen and (max-width: 1915px) {
+    .pic{
+        margin: 0px 50px;
+    }
+}
+@media screen and (max-width: 1415px) {
+    .pic{
+        margin: 0px 25px;
+    }
+}
+@media screen and (max-width: 781px) {
+    .pic{
+        margin: 0px 8px;
+    }
+}
+@media screen and (max-width: 354px) {
+    .pic{
+        margin: 0px 40px;
+    }
+}
+

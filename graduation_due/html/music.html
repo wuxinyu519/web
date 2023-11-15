@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>music</title>
+    <link rel="stylesheet" href="../mystyle/bootstrap.css">
+    <link rel="stylesheet" href="../mystyle/music.css">
+    <script src="../tools/bootstrap.js"></script>
+    <script src="../tools/jquery-3.4.1.js"></script>
+</head>
+<body>
+<div class="index">
+    <header>
+            <ul id="nav" class="row nav nav-pills" >
+                <li class="col-md-3 "><a href="../html/index.html">首页</a></li>
+                <li class="col-md-3 active"><a href="../html/music.html">歌曲</a></li>
+                <li class="col-md-3"><a href="../html/yingshi.html">影视</a></li>
+                <!--<li class="col-md-3"><a href="https://www.weibo.com/u/6554599420">其它</a></li>-->
+            </ul>
+    </header>
+    <div class="container row">
+        <div id="left" class="con-left col-md-2">
+            <ul >
+                <li ><a>歌曲</a></li>
+                <li><a id="a1" href="#" onclick="music1()">那幕--徐明浩</a></li>
+                <li ><a href="#" onclick="music2()">dreams come true--徐明浩</a></li>
+                <li ><a href="#" onclick="music3()">落花宝--seventeen</a></li>
+            </ul>
+        </div>
+        <div id="right" class="con-right col-md-9">
+                    <iframe src="namu.html" class="content" id="c" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script>
+        reSetSize();
+        window.onresize = reSetSize;
+
+//        iframe内容自适应
+        function reSetSize() {
+            var a=document.getElementsByClassName("content");
+            var windowsHeight = window.innerHeight;
+            var windowsWeight =window.innerWidth;
+            for(i=0;i<a.length;i++){
+                a[i].style.height= (windowsHeight-60) + "px";
+                a[i].style.width=(windowsWeight-$('.left').width())+"px"
+            }
+        }
+
+//        点击事件
+        function music1() {
+        document.getElementById('c').src="namu.html"
+        }
+        function music2() {
+            document.getElementById('c').src="dreams.html"
+        }
+        function music3() {
+            document.getElementById('c').src="luohua.html"
+        }
+</script>
+
+</html>

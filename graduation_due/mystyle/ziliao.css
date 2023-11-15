@@ -1,0 +1,76 @@
+.all{
+    /*background-color: #aae6de;*/
+    background-color: rgba(125, 223, 108, 0.6);
+}
+header{
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
+
+}
+
+.h a{
+    font-size: 30px;
+}
+@font-face {
+    font-family: myFont1;
+    src: url('../tools/ziti.ttf');
+}
+.all{
+    font-family: myFont1;
+
+}
+
+.glyphicon{
+    float: left;
+    line-height: 40px;
+    font-size: 1.6em;
+}
+
+.index{
+    margin: 10px 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.exper{
+    margin:10px;
+}
+.btn{
+    width:100%;
+    /*background-color: #262626;*/
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    background-color: #6787aa;
+    font-family: 幼圆;
+    font-weight: bold;
+}
+
+.name{
+    font-size: 2em;
+}
+.beijing{
+    margin: 5px; ;
+}
+.beijing-word{
+    padding: 5px;
+    border: 10px dotted #7ddf6c;
+    font-size: 1.8em;
+    text-decoration: underline;
+    line-height: 50px;
+}
+.footer-left{
+    text-align: center;
+    line-height: 50px;
+}
+
+

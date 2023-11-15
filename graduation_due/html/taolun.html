@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>讨论社区</title>
+    <link rel="stylesheet" href="../mystyle/bootstrap.css">
+    <script src="../tools/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../mystyle/taolun.css">
+    <script src="../tools/jquery-3.4.1.js"></script>
+</head>
+<body>
+<div class="all">
+    <header class="h">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">返回</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="ziliao.html" >资料</a></li>
+                        <li><a href="xingcheng.html">行程</a></li>
+                        <li><a href="taolun.html">讨论社区</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="index">
+        <div class="container">
+            <!--对象导航-->
+            <div class="side row">
+                <div class="box col-md-6">
+                    <span>The Words To:</span>
+                </div>
+                <a href="ziliao.html" class="name">
+                    <img src="../images/头像.jpg" alt="">the 8
+                </a>
+            </div>
+
+            <!--内容展示-->
+            <div class="show">
+                <div class="show1">
+                    <ul class="neirong" id="nei">
+                        <div>
+                            <img src="../images/讨论1.jpg" alt="">
+                            <li class="p">小八今天的那幕真的是艺术</li>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="../images/讨论2.jpg" alt="">
+                            <li class="p">小八，晚上你吃什么了</li>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="../images/讨论3.jpg" alt="">
+                            <li class="p">好久没上线了，o(≧口≦)o</li>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="../images/讨论4.jpg" alt="">
+                            <li class="p">期待seventeen的0622回归嘿嘿。。。</li>
+                        </div>
+                        <br>
+
+                    </ul>
+                </div>
+
+                <!--输入块-->
+                <div class="show2">
+                    <div>
+                        <input type='file' name='textfield' id='textfield' />
+                    </div>
+                    <textarea class="in"  wrap="hard" placeholder="在此输入文字信息..."></textarea>
+                    <button id="btn" class="btn-warning btn-block" >提交</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部版权-->
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <p>Copyright wxy&copy; 2020 Bootstrap 响应式网站 | 版权所有 <a href="#"></a> </p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--顶部返回-->
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#btn').click(function () {
+            if($(".in").val() == ""){
+                alert("不能为空")
+                return false
+            }else{
+            var text=$('.in').val();
+            var biaoqian='<div class="my"><li class="p">'
+            biaoqian+=text;
+            biaoqian+='</li><img src="../images/讨论5.jpg" alt=""> </div><br>';
+//            $('.neirong').append(biaoqian);
+            $('.in').val('');
+            document.getElementById('nei').insertAdjacentHTML("beforeEnd",biaoqian);
+
+            }
+
+        })
+
+    })
+</script>
+</html>

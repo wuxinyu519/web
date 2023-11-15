@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>idol</title>
+    <link rel="stylesheet" href="../mystyle/index.css">
+    <link rel="stylesheet" href="../mystyle/bootstrap.css">
+    <script src="../tools/bootstrap.min.js"></script>
+    <script src="../tools/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../mystyle/bootstrap-theme.css">
+    <script src="../tools/bootstrap.js"></script>
+    <script src="../tools/load.js"></script>
+    <script src="../tools/layer-v3.1.1/layer/layer.js"></script>
+</head>
+<body>
+<!--导航栏部分-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../images/logo.jpg" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">主页</a></li>
+                    <li><a href="ziliao.html">资料</a></li>
+                    <li><a href="xingcheng.html">行程</a></li>
+                    <li><a href="taolun.html">讨论</a></li>
+                    <li><a href="javascript:;" id="bLogin" onclick="ShowLoginText()">登录</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+            <!--登录盒子-->
+            <div id="loginBox">
+                <div class="login-item"><input  type="text" id="InputUsername" placeholder="请输入用户名" /></div>
+                <div class="login-item"><input  type="password" id="InputUserPwd" placeholder="请输入密码"/></div>
+                <div class="login-item"><a href="javascript:;" onclick="Login()">登录</a></div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!--主页部分-->
+<div class="index">
+
+    <!--内容版-->
+    <div class="page">
+        <!--基本介绍-->
+        <div class="intro" >
+            <!--轮播图-->
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="../images/轮播3.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/轮播1.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/轮播2.jpg" alt="Third slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/index轮播.jpg" alt="Fourth slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!--文字介绍-->
+            <div id="words" style="text-align: center">
+                <span>
+                    职业：歌手
+                    生日：1997年11月7日<br/>
+                    个人信息：178cm/53kg/天蝎座/O型<br/>
+                    代表作品：17 CARAT、LOVE&LETTER<br/>
+                    简介：徐明浩，艺名The8，1997年11月7日出生于辽宁省鞍山.
+                </span>
+            </div>
+
+            <!--补充说明-->
+            <div class="other">
+                <div class="pics">
+                    <div class="pic item1">
+                        <a class="music" href="../html/music.html">
+                            <img src="../images/音乐.jpg" alt="">歌曲
+                        </a>
+                    </div>
+                    <div class="pic item2">
+                        <a class="tv" href="../html/yingshi.html">
+                            <img src="../images/影视.jpg" alt="">影视
+                        </a>
+                    </div>
+                    <!--<div class="pic item3">-->
+                        <!--<a class="more" href="#">-->
+                            <!--<img src="../images/新闻.jpg" alt="">新闻-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <div class="pic item4">
+                        <a class="more" href="https://baike.baidu.com/item/%E5%BE%90%E6%98%8E%E6%B5%A9/17842247?fr=aladdin">
+                            <img src="../images/更多.jpg" alt="">更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--页尾-->
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <p>Copyright wxy&copy; 2020 Bootstrap 响应式网站 | 版权所有 <a href="#"></a> </p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href=""><i class="glyphicon glyphicon-phone-alt">&nbsp;联系我们</i></a></li>
+                <li><a href=""><i class="glyphicon glyphicon-map-marker">&nbsp;联系我们</i></a></li>
+                <li><a href=""><i class="glyphicon glyphicon-question-sign">&nbsp;联系我们</i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
